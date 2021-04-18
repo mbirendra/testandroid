@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.HomeFragment">
+
+   <TextView
+       android:id="@+id/tvTitle"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_gravity="center"
+       android:text="LENSDAYS"
+       android:textStyle="bold"
+       android:textColor="#3C5C36"
+       android:textSize="28sp"
+       android:layout_marginTop="8dp"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="0.14"
+            android:src="@drawable/lensdays"
+            android:scaleType="fitXY"
+            android:id="@+id/mapp"
+            android:layout_margin="5dp"
+            />
+
+
+        <EditText
+            android:id="@+id/etSearch"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:hint="Search"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:drawableLeft="@drawable/ic_search"
+            android:background="@drawable/bg_search"/>
+
+    </LinearLayout>
+
+
+
+    <com.denzcoskun.imageslider.ImageSlider
+        android:id="@+id/slider"
+        android:layout_margin="6dp"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        app:iss_auto_cycle="true"
+        app:iss_period="1500"
+        app:iss_delay="0"
+        app:iss_text_align="CENTER"/>
+
+   <com.google.android.material.bottomnavigation.BottomNavigationView
+       android:id="@+id/nvItems"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:background="@color/white"
+       android:elevation="0dp"
+       app:menu="@menu/menu_items"
+       app:itemRippleColor="@color/black"
+       app:itemTextColor="#3C5C36"
+       />
+
+
+   <LinearLayout
+       android:id="@+id/linearLay"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+       android:layout_weight="1"/>
+
+</LinearLayout>

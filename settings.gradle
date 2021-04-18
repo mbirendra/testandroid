@@ -1,0 +1,3 @@
+include ':furnitureos'
+include ':app'
+rootProject.name = "Online Furniture Store"

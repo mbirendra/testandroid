@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layoutProduct"
+    android:orientation="vertical"
+    android:layout_width="168dp"
+    android:layout_margin="3dp"
+    android:padding="6dp"
+    android:background="@drawable/bg_productdesign"
+    android:elevation="20dp"
+    android:layout_height="wrap_content">
+
+
+
+    <TextView
+        android:id="@+id/tvSaving"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save 20%"
+        android:layout_margin="4dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:padding="2dp"
+        android:layout_gravity="end"
+        android:background="#6634DF"
+
+        android:textSize="11sp"
+        />
+
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/ivItem"
+            android:scaleType="fitXY"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/lens2"/>
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/tvProductName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="Branded Shirt"
+        android:textColor="@color/black"
+        android:layout_gravity="center"
+        android:textStyle="bold"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:id="@+id/tvCut"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Rs 200"
+            android:layout_weight="1"
+            android:gravity="end"
+            android:textColor="@color/black"
+            android:visibility="invisible"
+            />
+
+        <TextView
+            android:id="@+id/tvPrice"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Rs 200"
+            android:layout_weight="1"
+            android:layout_marginLeft="6dp"
+            android:textColor="@color/black"
+            />
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
